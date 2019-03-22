@@ -18,7 +18,7 @@ config = ConfigParser.RawConfigParser(allow_no_value=True)
 config.readfp(io.BytesIO(sample_config))
 
 # Print start up message
-print('Website Monitor started using API key:' + config.get('api', 'api_key'))
+print('Website Monitor started using API key:' + config.get('api', 'apikey'))
 
 # Status Board led test
 sb = StatusBoard()
@@ -26,7 +26,7 @@ sb = StatusBoard()
 # Setup pingdom API
 username = config.get('api', 'username')
 password = config.get('api', 'password')
-apikey =  config.get('api', 'api_key')
+apikey =  config.get('api', 'apikey')
 api = pingdomlib.Pingdom(username, password, apikey)
 
 # Load settings
