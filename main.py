@@ -36,9 +36,10 @@ checkinterval = config.getfloat('settings', 'checkinterval')
 while True:
     # See pingdomlib.pingdom documentation to see available calls and settings
     pingdomchecks = api.getChecks()
-    for check in pingdomchecks:
 
-        sitedown = False
+    sitedown = False
+
+    for check in pingdomchecks:
 
         # Slot 1: Marketing Site (3170812)
         # Slot 2: MC Live (3779116)
