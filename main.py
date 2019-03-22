@@ -26,11 +26,11 @@ sb = StatusBoard()
 # Setup pingdom API
 username = config.get('api', 'username')
 password = config.get('api', 'password')
-apikey =  config.get('api', 'apikey')
+apikey = config.get('api', 'apikey')
 api = pingdomlib.Pingdom(username, password, apikey)
 
 # Load settings
-checkinterval = config.get('settings', 'checkinterval')
+checkinterval = config.getfloat('settings', 'checkinterval')
 
 
 while True:
