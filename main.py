@@ -38,6 +38,8 @@ while True:
     pingdomchecks = api.getChecks()
     for check in pingdomchecks:
 
+        sitedown = False
+
         # Slot 1: Marketing Site (3170812)
         # Slot 2: MC Live (3779116)
         # Slot 3: rpharms.com (4831918)
@@ -49,6 +51,7 @@ while True:
                 sb.one.lights.green.on()
                 sb.one.lights.red.off()
             else:
+                sitedown = True
                 sb.one.lights.red.on()
                 sb.one.lights.green.off()
 
@@ -57,6 +60,7 @@ while True:
                 sb.two.lights.green.on()
                 sb.two.lights.red.off()
             else:
+                sitedown = True
                 sb.two.lights.red.on()
                 sb.two.lights.green.off()
 
@@ -65,6 +69,7 @@ while True:
                 sb.three.lights.green.on()
                 sb.three.lights.red.off()
             else:
+                founderror = True
                 sb.one.lights.red.on()
                 sb.one.lights.green.off()
 
@@ -73,7 +78,13 @@ while True:
                 sb.four.lights.green.on()
                 sb.four.lights.red.off()
             else:
+                sitedown = True
                 sb.four.lights.red.on()
                 sb.four.lights.green.off()
+
+        if sitedown:
+            sb.five.lights.red.blink()
+        else:
+            sb.five.lights.red.off()
 
     time.sleep(checkinterval)
