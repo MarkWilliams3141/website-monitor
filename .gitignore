@@ -1,2 +1,3 @@
 .idea/
-config/config.py
+config/config.ini
+venv/
