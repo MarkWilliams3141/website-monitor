@@ -54,26 +54,26 @@ while True:
 
         if check.id == 3779116:
             if check.status == 'up':
-                sb.one.lights.green.on()
-                sb.one.lights.red.off()
+                sb.two.lights.green.on()
+                sb.two.lights.red.off()
             else:
-                sb.one.lights.red.on()
-                sb.one.lights.green.off()
+                sb.two.lights.red.on()
+                sb.two.lights.green.off()
 
         if check.id == 4831918:
             if check.status == 'up':
-                sb.one.lights.green.on()
-                sb.one.lights.red.off()
+                sb.three.lights.green.on()
+                sb.three.lights.red.off()
             else:
                 sb.one.lights.red.on()
                 sb.one.lights.green.off()
 
         if check.id == 4569933:
             if check.status == 'up':
-                sb.one.lights.green.on()
-                sb.one.lights.red.off()
+                sb.four.lights.green.on()
+                sb.four.lights.red.off()
             else:
-                sb.one.lights.red.on()
-                sb.one.lights.green.off()
+                sb.four.lights.red.on()
+                sb.four.lights.green.off()
 
     time.sleep(checkinterval)
