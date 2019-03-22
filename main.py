@@ -44,32 +44,36 @@ while True:
         # Slot 4: SAMS Sigma (4569933)
         # Slot 5: Unused
 
-        if (check.id == 3170812) and (check.status == 'up'):
-            sb.one.lights.green.on()
-            sb.one.lights.red.off()
-        else:
-            sb.one.lights.red.on()
-            sb.one.lights.green.off()
+        if check.id == 3170812:
+            if check.status == 'up':
+                sb.one.lights.green.on()
+                sb.one.lights.red.off()
+            else:
+                sb.one.lights.red.on()
+                sb.one.lights.green.off()
 
-        if (check.id == 3779116) and (check.status == 'up'):
-            sb.two.lights.green.on()
-            sb.two.lights.red.off()
-        else:
-            sb.two.lights.red.on()
-            sb.two.lights.green.off()
+        if check.id == 3779116:
+            if check.status == 'up':
+                sb.one.lights.green.on()
+                sb.one.lights.red.off()
+            else:
+                sb.one.lights.red.on()
+                sb.one.lights.green.off()
 
-        if (check.id == 4831918) and (check.status == 'up'):
-            sb.three.lights.green.on()
-            sb.three.lights.red.off()
-        else:
-            sb.three.lights.red.on()
-            sb.three.lights.green.off()
+        if check.id == 4831918:
+            if check.status == 'up':
+                sb.one.lights.green.on()
+                sb.one.lights.red.off()
+            else:
+                sb.one.lights.red.on()
+                sb.one.lights.green.off()
 
-        if (check.id == 4569933) and (check.status == 'up'):
-            sb.four.lights.green.on()
-            sb.four.lights.red.off()
-        else:
-            sb.four.lights.red.on()
-            sb.four.lights.green.off()
+        if check.id == 4569933:
+            if check.status == 'up':
+                sb.one.lights.green.on()
+                sb.one.lights.red.off()
+            else:
+                sb.one.lights.red.on()
+                sb.one.lights.green.off()
 
     time.sleep(checkinterval)
