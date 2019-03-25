@@ -70,9 +70,9 @@ while True:
                 sb.three.lights.green.on()
                 sb.three.lights.red.off()
             else:
-                founderror = True
-                sb.one.lights.red.on()
-                sb.one.lights.green.off()
+                sitedown = True
+                sb.three.lights.red.on()
+                sb.three.lights.green.off()
 
         if check.id == 4569933:
             if check.status == 'up':
