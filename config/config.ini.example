@@ -1,0 +1,7 @@
+[api]
+username = example
+password = example
+apikey = example
+
+[settings]
+checkinterval = 60
