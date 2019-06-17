@@ -13,7 +13,7 @@ Assuming RaspberryPi with python environment.
 
 The script can be also executed by creating a script such as:
 
-`#!/bin/sh
+```#!/bin/sh
 
 dir="$(dirname "${0}")"
 cd "${dir}"
@@ -21,7 +21,7 @@ while /bin/true; do
     python main.py
     sleep 60
 done
-`
+```
 
 Note: Edit the id codes in `main.py` to setup uptime reports. These codes can be found in the pingdom web admin.
 
